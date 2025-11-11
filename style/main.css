@@ -1,0 +1,91 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+  --main-color: #14b8a6;
+  --text-color: #333;
+  --bg-color: #f9fafb;
+  --font-main: 'Poppins', sans-serif;
+  --border-radius: 10px;
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+
+header {
+    position: sticky;
+    top: 0;
+    padding: 20px 32px;
+    background-color: var(--main-color);
+    z-index: 999;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav,
+nav a {
+    color: var(--bg-color);
+}
+
+nav .logo span {
+    color: var(--text-color);
+}
+
+.nav-links,
+.header-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-links a {
+    padding: 10px 16px;
+}
+
+
+.cart-action {
+    position: relative;
+}
+
+.cart-action span {
+    position: absolute;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    height: 16px;
+    width: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    top: -14px;
+    right: -4px;
+    font-size: 10px;
+}
+
+
+
+.mobile-menu {
+    display: none;
+}
