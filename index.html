@@ -3,87 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OrderNow - Delicious Food Delivery</title>
+    <title>FreshBite - Fresh. Fast. Delicious.</title>
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <h2>Order<span>Now</span></h2>
+    <nav class="navbar" id="navbar">
+        <!-- logo -->
+        <div class="logo">
+            <h2>
+                Fresh<span>Bite</span>
+            </h2>
+        </div>
+        <!-- pages links -->
+        <ul class="navLinks">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <!-- header action -->
+         <div class="headerAction">
+            <div class="theme theme-toggle" id="themeToggle" title="Toggle theme">
+                <i class="fa-solid fa-sun"></i>
+                <!-- <i class="fa-solid fa-moon"></i> -->
             </div>
-            <ul class="nav-links">
-                <li class="nav-item"><a href="#">Home</a></li>
-                <li class="nav-item"><a href="#">Menu</a></li>
-                <li class="nav-item"><a href="#">About Us</a></li>
-                <li class="nav-item"><a href="#">Contact Us</a></li>
-            </ul>
-            <div class="icon-actions">
-                <div class="icon">
-                    <i class="fa-solid fa-right-to-bracket"></i>
-                </div>
-                <div class="icon cart-icon">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <span>0</span>
-                </div>
-                <div class="icon bar-icon">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
+            <div class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>0</span>
             </div>
-        </nav>
-    </header>
+         </div>
+    </nav>
 
-    <div class="hero">
-        <div class="slide-container">
-            <div class="slide-item slider1 active">
-                <div class="slide-content">
-                    <h1 class="slide-title">Fresh & Delicious Meals</h1>
-                    <p class="slide-description">Handcrafted dishes made with the finest ingredients and traditional recipes passed down through generations.</p>
-                    <a href="#" class="slide-button">Order Now</a>
+    <section class="hero">
+        <div class="heroSlider">
+            <div class="heroSlide slider1 active">
+                <div class="slideContent">
+                    <h1 class="heroTitle">
+                        Fresh. Fast. Delicious
+                    </h1>
+                    <p class="heroSubtitle">
+                        Order your favorite food any time.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="" class="btn primary-btn">
+                            Order Now
+                        </a>
+                        <a href="" class="btn secondary-btn">
+                            View Menu
+                        </a>
+                    </div>
                 </div>
             </div>
-
-            <div class="slide-item slider2">
-                <div class="slide-content">
-                    <h1 class="slide-title">Seasonal Specials</h1>
-                    <p class="slide-description">Discover our chef's special creations featuring seasonal ingredients at their peak flavor.</p>
-                    <a href="#" class="slide-button">View Menu</a>
+            <!-- slider3 -->
+            <div class="heroSlide slider2">
+                <div class="slideContent">
+                    <h1 class="heroTitle">
+                        Teste the Difference
+                    </h1>
+                    <p class="heroSubtitle">
+                        Made with fresh, quantity ingredients.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="" class="btn primary-btn">
+                            Order Now
+                        </a>
+                        <a href="" class="btn secondary-btn">
+                            View Menu
+                        </a>
+                    </div>
                 </div>
             </div>
-
-            <div class="slide-item slider3">
-                <div class="slide-content">
-                    <h1 class="slide-title">Sweet Treats</h1>
-                    <p class="slide-description">Indulge in our decadent desserts and pastries, baked fresh daily in-house.</p>
-                    <a href="#" class="slide-button">Dessert Menu</a>
-                </div>
-            </div>
-
-            <div class="slide-item slider4">
-                <div class="slide-content">
-                    <h1 class="slide-title">Fast Delivery</h1>
-                    <p class="slide-description">Hot and fresh food delivered to your doorstep in 30 minutes or less!</p>
-                    <a href="#" class="slide-button">Order Delivery</a>
+            <div class="heroSlide slider3">
+                <div class="slideContent">
+                    <h1 class="heroTitle">
+                        Quick & Easy Delivery
+                    </h1>
+                    <p class="heroSubtitle">
+                        Hot meals delevered to your door.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="" class="btn primary-btn">
+                            Order Now
+                        </a>
+                        <a href="" class="btn secondary-btn">
+                            View Menu
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-        
-        <!-- Navigation Arrows -->
-        <div class="slider-nav">
-            <button class="nav-arrow prev-arrow">‹</button>
-            <button class="nav-arrow next-arrow">›</button>
-        </div>
-        
-        <!-- Navigation Dots -->
-        <div class="slider-dots">
-            <span class="dot active" data-slide="0"></span>
-            <span class="dot" data-slide="1"></span>
-            <span class="dot" data-slide="2"></span>
-            <span class="dot" data-slide="3"></span>
-        </div>
-    </div>
+        <button class="heroNav heroPrev">‹</button>
+        <button class="heroNav heroNext">›</button>
+        <div class="hero-dots"></div>
+    </section>
 
-    <script src="js/main.js"></script>
+    
+    <script src="script/home.js"></script>
+    <script src="script/theme.js"></script>
 </body>
 </html>
